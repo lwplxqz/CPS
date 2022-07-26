@@ -1,0 +1,11 @@
+
+body{
+    height: 100%;
+    background-color: #f8f8f8;
+    @media(min-width: 1440px) {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
+}
+

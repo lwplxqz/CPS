@@ -1,0 +1,14 @@
+.whiteXD{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0.8;
+    transition: all .3s;
+    &--hidden{
+        opacity: 0;
+        display: none;
+    }
+}

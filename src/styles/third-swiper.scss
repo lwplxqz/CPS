@@ -1,0 +1,88 @@
+.third-swiper{
+    height: unset !important;
+    @media (min-width: 768px) {
+        display: none;
+        
+    }
+}
+.third-slider{
+    @media (min-width: 768px) {
+        display: none;
+        
+    } 
+}
+
+.third-swiper .slider-slide{
+    
+    &-title{
+    margin: 0;
+    display: flex;
+    line-height: 20px;
+        flex-direction: column;
+    &::before{
+        content: 'Ремонтные услуги';
+        color: $focused-gray;
+        margin-bottom: 5px;
+    }
+    }
+    &-price{
+        display: flex;
+        flex-direction: column;
+        font-family: TTLakes-medium;
+        &::before{
+            content: 'Цена';
+            color: $focused-gray;
+            margin-bottom: 5px;
+        }
+    }
+    &-time{
+        display: flex;
+        flex-direction: column;
+        font-family: TTLakes-medium;
+        line-height: 18px;
+        &::before{
+            content: 'Срок';
+            color: $focused-gray;
+            margin-bottom: 5px;
+            
+        }
+    }
+    &-order{
+        position: absolute;
+        bottom: 16px;
+        font-family: TTLakes-bold;
+        color: white;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        border: unset;
+        background-color: #FF3E79;
+        align-items: center;
+        border-radius: 17px;
+        padding: 10px 15px;
+        &::before{
+            content: 'ЗАКАЗАТЬ';
+        }
+        &::after{
+            content: ' ';
+            background-image: url('../images/dropdown.svg');
+            width: 7px;
+            height: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.third-swiper .swiper-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 260px !important;
+    height: 200px !important;
+    max-width: none !important;
+    max-height: none !important;
+    padding: 16px;
+    
+    font-size: 14px;
+}

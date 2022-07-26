@@ -1,0 +1,23 @@
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    height: 89px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    &__button-close{
+        background-image: url(../images/burger.svg);
+        margin-right: 16px;
+        @media (min-width: 1440px) {
+            display: none;
+        }
+    }
+    &__logo{
+        width: 97px;
+        height: 51px;
+        margin-right: auto;
+    }
+    &__button-search{
+        background-image: url(../images/search.svg);
+    }
+}

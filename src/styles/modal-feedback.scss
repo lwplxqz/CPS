@@ -1,0 +1,61 @@
+.modal-feedback{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    background-color: white;
+    font-family: TTLakes-medium;
+    position: fixed;
+    max-width: 440px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    & .button{
+        display: block;
+        @media (min-width: 768px) {
+            position: absolute;
+            left: -80px;
+        }
+    }
+    & .main__title{
+        &::before{
+            content: none;
+        }
+    }
+    & input, textarea{
+        padding: 12px 16px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    &__inner-links{
+        text-decoration: none;
+        color: $purpule;
+    }
+    &--hidden{
+        display: none;
+    }
+    &.modal-call--hidden{
+        display: none;
+    }
+    & .modal{
+        max-width: 154px;
+        margin-left: auto;
+        display: flex;
+        &::before{
+            content: 'ОТПРАВИТЬ';
+        }
+        &::after{
+            content: ' ';
+            background-image: url('../images/dropdown.svg');
+            width: 7px;
+            height: 10px;
+            margin-left: 10px;
+        }
+    }
+}

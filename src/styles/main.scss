@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    padding-left: 16px;
+    flex-direction: column;
+    height: 100%;
+    &__title{
+        display: flex;
+        font-family: TTLakes-bold;
+        font-size: 28px;
+        align-items: center;
+        &::before{
+            content: "";
+            width: 10px;
+            height: 40px;
+            background-color: #41F6D7;
+            margin-right: 12px;
+            margin-left: -21px;
+            border-radius: 20%; 
+        }
+    }
+}

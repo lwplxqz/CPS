@@ -1,0 +1,27 @@
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: TTLakes-medium;
+    font-size: 14px;
+    color: $focused-gray;
+    border-top: 1px solid #D9FFF5;
+    ;
+    &__privacy{
+        text-decoration: none;
+        color: $focused-gray;
+    }
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 20px;
+        &__reserved{
+            text-align: left;
+            
+        }
+        &__disclamer{
+            text-align: right;
+        }
+    }
+}

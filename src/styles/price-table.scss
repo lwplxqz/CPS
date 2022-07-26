@@ -1,0 +1,73 @@
+.price-table{
+    display: none;
+    font-family: TTLakes-medium;
+    
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 0 24px;
+    margin-top: 65px;
+    max-width: 1068px;
+
+    margin-right: auto;
+    &__header{
+        position: relative;
+        top: -35px;
+        
+        color: $focused-gray;
+    }
+    &__body{
+        position: relative;
+        top: -16px;
+        
+    }
+    &__content{
+
+        vertical-align: middle;
+        &-name{
+            width: 55%;
+        }
+        &-price{
+            width: 20%;
+        }
+        &-time{
+            margin-right: 60px;
+        }
+    }
+    &__row{
+        height: 60px;
+    }
+    &__column-name{
+        font-weight:100;
+        text-align: left;
+    }
+    &__order-button{
+        font-family: TTLakes-bold;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        border: unset;
+        background-color: #FF3E79;
+        align-items: center;
+        border-radius: 17px;
+        padding: 10px 15px;
+        margin-left: 16px;
+        &::before{
+            content: 'ЗАКАЗАТЬ';
+        }
+        &::after{
+            content: ' ';
+            background-image: url('../images/dropdown.svg');
+            width: 7px;
+            height: 10px;
+            margin-left: 10px;
+        }
+    }
+    @media (min-width:768px) {
+        display: block;
+    }
+}
+
+.table-container{
+    padding-right: 16px;
+    padding-left: 20px;
+}

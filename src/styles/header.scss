@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    justify-content: flex-start;
+    background-color: #fff;
+    @media(min-width: 1440px) {
+        height: 0;
+    }
+    &__container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        @media(min-width: 1440px) {
+            justify-content: flex-end;
+        }
+    }
+    &__menu-button{
+        background-image: url(../images/menu.svg);
+        margin-left: 24px;
+        @media(min-width: 768px) {
+            display: flex;
+            width: 88px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            flex-direction: row-reverse;
+            margin: 0;
+            &::after{
+                width: 2px;
+                height: 32px;
+                content: " ";
+                background-color: #EAEAEA;
+                margin-left: 30px;
+                align-self: center; 
+            }
+        }
+        @media(min-width: 1440px) {
+            display: none;
+        }
+    }
+    &__logo{
+        height: 50px;
+        margin-left: 17px;
+        margin-right: auto;
+        @media(min-width: 1440px) {
+            display: none;
+        }
+    }
+    &__contacts{
+        display: none;
+        @media(min-width: 768px) {
+            width: 145px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media(min-width: 1440px) {
+            display: none;
+        }
+    }
+    &__phone-button{
+        background-image: url(../images/call.svg);
+    }
+    &__chat-button{
+        background-image: url(../images/chat.svg);
+    }
+    &__other-button{
+        background-image: url(../images/profile.svg);
+    }
+    &__button-container{
+        display: flex;
+        justify-self: flex-end;
+        justify-content: space-between;
+        width: 120px;
+        &::before{
+            width: 2px;
+            height: 32px;
+            content: " ";
+            background-color: #EAEAEA;
+            align-self: center;
+            @media(min-width: 1440px) {
+                content: unset;
+            }
+        }
+        @media(min-width: 768px) {
+            margin-left: 15px;
+        }
+        @media(min-width: 1440px) {
+            position: absolute;
+            top: 20px;
+            width: 400px;
+        }
+        
+    }
+    &__repair-button{
+        background-image: url(../images/repair.svg);
+        margin-left: auto;
+        margin-right: auto;
+        @media(min-width: 1440px) {
+            display: flex;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-position: 85% 50%;
+            align-items: center;
+            &::before{
+                content: "Оставить заявку";
+                font-family: TTLakes-medium;
+            }
+        }
+    }
+    &__status-button{
+        margin-right: auto;
+        background-image: url(../images/checkstatus.svg);
+        @media(min-width: 1440px) {
+            display: flex;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-position: 85% 50%;
+            align-items: center;
+            &::before{
+                content: "Статус ремонта";
+                font-family: TTLakes-medium;
+            }
+        }
+    }
+    @media(min-width: 768px) {
+        justify-content: space-around;
+    }
+}

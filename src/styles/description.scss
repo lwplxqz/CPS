@@ -1,0 +1,45 @@
+.description {
+    font-family: TTLakes-medium;
+    &__information{
+        font-size: 14px;
+        padding: 0 16px;
+        max-width: 520px;
+        line-height: 22px;
+        &--hidden{
+            display: none;
+            @media(min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+    &__more{
+        align-items: center;
+        display: flex;
+        line-height: 24px;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        background-color: unset;
+        border: unset;
+        &::before{
+            content: " ";
+            background-image: url(../images/icon.svg);
+            width: 7px;
+            height: 11px;
+            margin-left: 24px;
+            margin-right: 16px;
+        }
+    }
+    &__image{
+        width: 100%;
+        margin-top: 15px;
+        max-width: 520px;
+        @media(min-width: 768px) {
+            border-radius: 6px;
+            margin-right: 25px;
+        }
+    }
+    @media(min-width: 768px) {
+        display: flex;
+    }
+}
